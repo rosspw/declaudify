@@ -270,7 +270,7 @@ The skill fixes structure first and words second, because word habits change wit
 
 ## Contributing
 
-Found a tell it misses, or a rewrite that changed a fact? Open an issue with the [new tell](.github/ISSUE_TEMPLATE/new-tell.yml) or [rewrite problem](.github/ISSUE_TEMPLATE/rewrite-problem.yml) template and paste the real sentence. [`AGENTS.md`](AGENTS.md) has the rules for changing the skill. Run `python3 scripts/validate.py` before a pull request.
+Found a tell it misses, or a rewrite that changed a fact? Open an issue and paste the real sentence, with what you expected. [`AGENTS.md`](AGENTS.md) has the rules for changing the skill. Run `python3 scripts/validate.py` before a pull request.
 
 ## Sources and credit
 
