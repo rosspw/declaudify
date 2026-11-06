@@ -68,7 +68,7 @@ A real 1,071-word plan that Claude wrote, with tables, checklists and a closing 
 
 Only declaudify and blader/humanizer moved the decision from the bottom of the answer to the top. The rest, plain Claude included, cleaned the words and left the shape. The table shows declaudify 1.1.0. This release, 1.1.2, scored 34.2 on the same text in a later blind round against 1.1.0 (33.0) and blader/humanizer (28.2), and lost 0.3 facts of 45.
 
-That is one text, so read it as a direction. A second eval on six formats (chat answer, PR, LinkedIn post, report, podcast script, README) came out the same way. Rubric, fixtures, raw outputs and every judge note are in [`evals/`](evals/).
+That is one text, so read it as a direction. A second eval on six formats (chat answer, PR, LinkedIn post, report, podcast script, README) came out the same way. The rubric, fixtures, raw outputs and judge notes are kept in a private repo. Ask and I will share them.
 
 ## Install
 
@@ -239,7 +239,7 @@ All three are real outputs from the blind eval (declaudify 1.0). Every fact in e
 <details>
 <summary><strong>A README</strong>: install moves up, the feature wall comes down</summary>
 
-See [`evals/fixtures/6-readme.md`](evals/fixtures/6-readme.md) for the before and [`evals/results/iteration-2/out/NEW/6-readme.md`](evals/results/iteration-2/out/NEW/6-readme.md) for the after. It scored 35 of 35 from its blind judge.
+It scored 35 of 35 from its blind judge.
 
 </details>
 
@@ -259,7 +259,6 @@ The skill fixes structure first and words second, because word habits change wit
 | [`references/self-check.md`](references/self-check.md) | The checklist the skill runs silently after every edit |
 | [`output-styles/declaudify.md`](output-styles/declaudify.md) | The always-on version for Claude Code |
 | [`prompt.txt`](prompt.txt) | The plain prompt for any model |
-| [`evals/`](evals/) | Fixtures, rubric, raw outputs, judge scores |
 | [`scripts/`](scripts/) | `validate.py` (package checks) and `check_protected.py` (did code, links or numbers move?) |
 
 ## What it isn't

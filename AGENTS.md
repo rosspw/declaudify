@@ -15,8 +15,7 @@ This repo is one skill written in Markdown. `SKILL.md` is the prompt agents read
 - `CHANGELOG.md` holds release notes, newest first. Its first heading is the version.
 - `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json`, `.cursor-plugin/plugin.json`,
   `agents/openai.yaml` are the manifests. Their descriptions are the first sentence of the skill's.
-- `evals/` holds the fixtures, the pre-registered rubric and the results. The README's table is copied
-  from `evals/results.md` and nowhere else.
+- The evals are not in this repo. They live in the author's private repo; the README's table is copied from there and nowhere else.
 
 ## Rules for changes
 
@@ -31,8 +30,7 @@ This repo is one skill written in Markdown. `SKILL.md` is the prompt agents read
   specific is shown as a Gap. An example that adds a detail is a bug.
 - **Formats.** A new format gets a detection row and a section with four parts: structure that serves,
   structure that is noise, patterns to flag, rewrite rules.
-- **Evals.** A change that touches a move or a tier gets re-run against the fixtures before release. Update
-  `evals/results.md` and the README table together, with n.
+- **Evals.** A change that touches a move or a tier gets re-run against the fixtures (private repo) before release. Update the README table with n.
 - **Claims.** No detector claims, no scores, no user counts without a number and a date behind them.
 - **Examples.** Run every new example through `scripts/check_protected.py` against its before.
 - **Checks before publishing.** `python3 scripts/validate.py`, `npx skills add . --list`,

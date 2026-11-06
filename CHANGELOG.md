@@ -15,7 +15,7 @@ packets. Facts 4.7, 0.3 items lost of 45, no fact added; point first and structu
 
 ## 1.1.1
 
-2026-11-03. One fix from the seven-way eval (see `evals/results.md`). declaudify 1.1.0's only
+2026-11-03. One fix from the seven-way eval. declaudify 1.1.0's only
 repeated miss there was dropping "We think" from a hypothesis, which turned a guess into a claim. Every
 competitor's most common miss was dropping the "not" half of a limiting negation ("not for unlimited
 energy", "it doesn't add"), because anti-slop rules read it as a "not X but Y" tell. SKILL.md and the
@@ -23,7 +23,7 @@ self-check now name both as facts.
 
 Re-run 2026-11-06 (3 runs, 6 blind judges, against 1.1.0 and blader): the fix worked (facts 4.3 vs 3.3, every
 hedge and negation kept), but the editor got more cautious (point first 4.3 vs 5.0) and scored 32.0 vs 33.0
-overall. See `evals/results.md`.
+overall.
 
 ## 1.1.0
 
@@ -43,7 +43,7 @@ humanizerai, proseify). Not re-run through the blind eval; the 1.0.0 numbers bel
 - `scripts/check_protected.py`: compares frontmatter, code, links, URLs, tables, ids and every number
   between an original and an edit. On the eval outputs it caught blader dropping "#142" and adding "12".
   (Adapted from humanizer-zh's `check_structure.py`, MIT.)
-- Blind comparison against stop-slop added to `evals/results/stop-slop-comparison/`: stop-slop 27.3 of 35,
+- Blind comparison against stop-slop added: stop-slop 27.3 of 35,
   declaudify 32.5, blader 30.7; stop-slop changed or added facts in 5 of 6.
 
 ## 1.0.0
@@ -62,7 +62,7 @@ iterations, used daily across two repos) after reading the four best-known human
 - Three modes: Edit, Audit, Last answer. File and embedded input shapes.
 - A touch budget stated up front: light, medium or rebuild.
 - Always-on: a Claude Code output style, a CLAUDE.md snippet, a plain prompt for any model.
-- Six fixtures, a pre-registered rubric, and a blind three-way comparison in `evals/`.
+- Six fixtures, a pre-registered rubric, and a blind three-way comparison.
 - No detector claims, no AI scores, no authorship guesses.
 
 Eval, iteration 2, blind, n=6 per condition: declaudify 32.8 of 35, blader/humanizer 3.1 29.3, the previous
