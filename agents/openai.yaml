@@ -1,0 +1,4 @@
+interface:
+  display_name: "declaudify"
+  short_description: "Make AI-written text plain, point-first and easy to follow, without changing what it says."
+  default_prompt: "Use the declaudify skill to edit the text I give you: find the point, lead with it, structure it for its format, translate Claudish and AI vocabulary into plain words, remove the tells in proportion, and keep every fact exactly as it was. Never score how AI it sounds."

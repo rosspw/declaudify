@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "declaudify",
+  "owner": { "name": "Ross Popoff-Walker", "url": "https://rosspw.com" },
+  "description": "Install declaudify as a Claude plugin.",
+  "plugins": [
+    {
+      "name": "declaudify",
+      "source": "./",
+      "description": "Make anything an AI wrote plain, point-first and easy to follow, without changing what it says.",
+      "license": "MIT",
+      "keywords": ["writing", "editing", "plain-language", "claudish", "humanize", "readability"]
+    }
+  ]
+}

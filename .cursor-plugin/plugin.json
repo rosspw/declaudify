@@ -1,0 +1,10 @@
+{
+  "name": "declaudify",
+  "description": "Make anything an AI wrote plain, point-first and easy to follow, without changing what it says.",
+  "version": "1.1.2",
+  "author": { "name": "Ross Popoff-Walker", "url": "https://rosspw.com" },
+  "homepage": "https://github.com/rosspw/declaudify",
+  "repository": "https://github.com/rosspw/declaudify",
+  "license": "MIT",
+  "keywords": ["writing", "editing", "plain-language", "claudish", "humanize", "readability"]
+}

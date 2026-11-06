@@ -1,0 +1,28 @@
+name: Rewrite problem
+description: The skill changed a fact, dropped a caveat, over-edited a voice, or made something worse
+title: "Rewrite: "
+labels: [rewrite]
+body:
+  - type: textarea
+    id: before
+    attributes:
+      label: Before (what you gave it)
+    validations:
+      required: true
+  - type: textarea
+    id: after
+    attributes:
+      label: After (what it returned)
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What went wrong
+      description: A changed fact, a lost negation, a flattened voice, a wrong structure for the format, new slop.
+    validations:
+      required: true
+  - type: input
+    id: format
+    attributes:
+      label: Format (chat answer, doc, README, PR, post, email, Slack, script, slides, UI copy)
