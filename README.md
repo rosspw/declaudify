@@ -6,6 +6,21 @@ declaudify makes anything an AI wrote plain, point-first and easy to follow, wit
 
 It is a skill for Claude Code, claude.ai, Codex, Cursor and any agent that reads a `SKILL.md`. It also ships as an always-on output style and as a plain prompt you can paste into any model.
 
+![A Claude Code reply before and after declaudify: 239 words become 152, every number, file and issue kept, the decision first](assets/hero.png)
+
+**Install** (any agent that reads a `SKILL.md`):
+
+```bash
+npx skills add rosspw/declaudify --global --agent '*'
+```
+
+Or paste this to your agent: *"Install the declaudify skill from https://github.com/rosspw/declaudify."* Claude Code plugin, claude.ai and paste-a-prompt options are [below](#install).
+
+No API keys, no config, no extra binaries. Plain markdown files, plus two optional Python scripts.
+
+<details>
+<summary>The same example as text</summary>
+
 **Before** (a Claude Code reply)
 
 > You're absolutely right to push back on this, and I want to be transparent about the honest shape of what landed.
@@ -39,6 +54,8 @@ It is a skill for Claude Code, claude.ai, Codex, Cursor and any agent that reads
 > Still open if you want them: a follow-up for the download path, and adding the retry count to telemetry.
 
 The answer moved to the first sentence. "Gated on", "load-bearing", "byte-identical" and "belt-and-suspenders" became plain words. "Passed cleanly" became the tests that ran. Every number, file and issue survived, and nothing was added. This is a real output from the blind eval below.
+
+</details>
 
 ## What it does
 
@@ -116,6 +133,15 @@ Paste [`prompt.txt`](prompt.txt) into ChatGPT, Gemini, a claude.ai chat or a Pro
 ```
 
 Or ask in plain words: "declaudify this", "make this readable", "I can't follow this", "humanize this post", "audit this for AI tells". After one of Claude's own answers, just say "declaudify that".
+
+| You say | What happens |
+|---|---|
+| "declaudify this", "humanize this", "make this less AI" | Edit mode: the full edit, plus what changed |
+| "I can't follow this", "make this readable" | Same, led by the point for a reader who is lost |
+| "audit this", "does this sound like AI", "don't rewrite" | Audit mode: a table of tells, quoted lines and fixes. No rewrite |
+| "declaudify that" (after a Claude answer) | Rewrites Claude's last reply, decision first, every fact and command kept |
+
+The skill's frontmatter `description` in [`SKILL.md`](SKILL.md) holds the exact trigger wording.
 
 | Mode | Ask | You get |
 |---|---|---|
